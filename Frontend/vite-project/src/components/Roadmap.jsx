@@ -54,7 +54,7 @@ const Roadmap = () => {
       </span>&nbsp;Friends
     </p>
   </div>
-  <span className='leading-[16px] text-[12px] text-[#64748B]'>(Same day to earn&nbsp;<span className='text-[16px] text-[#DC2626] font-bold'>2x</span>&nbsp;points )</span>
+  <span className='leading-[16px] text-[12px] text-[#64748B]'>(Same day to earn&nbsp;<span className='text-[16px] text-[#DC2626] font-bold'>2x</span>&nbsp;points)</span>
 </div>
                  <div className='flex gap-[4px] px-[8px] py-[4px] bg-[#B45309] h-[28px] w-[151px] rounded-sm'>
                     <img src='/images/coin.png' className='w-[16px] h-[20px]'/>
@@ -72,7 +72,7 @@ const Roadmap = () => {
       </span>&nbsp;Friends
     </p>
   </div>
-  <span className='leading-[16px] text-[12px] text-[#64748B]'>(Same day to earn&nbsp;<span className='text-[16px] text-[#DC2626] font-bold'>3x</span>&nbsp;points )</span>
+  <span className='leading-[16px] text-[12px] text-[#64748B]'>(Same day to earn&nbsp;<span className='text-[16px] text-[#DC2626] font-bold'>3x</span>&nbsp;points)</span>
 </div>
                  <div className='flex gap-[4px] px-[8px] py-[4px] bg-[#B45309] h-[28px] w-auto rounded-sm'>
                     <img src='/images/coin.png' className='w-[16px] h-[20px]'/>
