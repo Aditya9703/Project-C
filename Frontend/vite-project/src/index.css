@@ -6,3 +6,10 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-display: swap;
+}
