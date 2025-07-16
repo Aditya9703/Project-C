@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import Roadmap from './components/Roadmap'
-import './App.css'
+// import { useState } from 'react'
+import "./App.css";
+import Homepage from "./components/Homepage";
+import Navbar from "./components/Navbar";
+import Roadmap from "./components/Roadmap";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
-
   return (
     <>
-      <div className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-          Vaibhav
-      </div>
-      <Roadmap/>
-
+      <Router>
+        <Navbar />
+        <Homepage />
+        <Roadmap />
+      </Router>
     </>
-  )
+  );
 }
 
 export default App;
