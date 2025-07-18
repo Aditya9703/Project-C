@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import "./App.css";
+import Career from "./components/Career";
 import Homepage from "./components/Homepage";
 import Instructor from "./components/Instructor";
 import Navbar from "./components/Navbar";
@@ -14,6 +15,7 @@ function App() {
         <Homepage />
         <Instructor />
         <Roadmap />
+        <Career/>
       </Router>
     </>
   );
