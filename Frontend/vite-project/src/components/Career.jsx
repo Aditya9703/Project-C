@@ -17,16 +17,22 @@ function Career() {
             <CareerCard heading = "Resume Review" pic = "/images/card3.svg"
             subHeading="Invite +10 friend to unlock" subColor="#3940A0"/>
 
-            <CareerCard heading = "Renaissance Course" pic = "/images/card4.svg"
+            <CareerCard heading = "Renaissance Course" pic = "/images/card4.svg" 
             subHeading="Invite +10 friend to unlock" subColor="#3940A0"/>
 
             <CareerCard heading = "1 Mock Interview" pic = "/images/card5.svg"
             subHeading="Invite +10 friend to unlock" subColor="#3940A0"/>
 
-            <CareerCard heading = "Renaissance Course" pic = "/images/card6.jpg"
-            subHeading="Invite +10 friend to unlock" subColor="#020617" background = "#FCD34D"/>
+            <CareerCard heading = "Mentorship with Founders" pic = "/images/card6.jpg"
+            subHeading="Invite +100 friend to unlock" subColor="#020617" background = "#FCD34D"/>
 
             
+
+            
+
+            
+
+          
 
         </div>
 
