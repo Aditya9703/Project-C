@@ -44,18 +44,14 @@ function FAQ() {
   },
   {
     question: "How do I join the community?",
-    answer: "Once you register, you’ll receive an invite link to our private whatsapp group where discussions, solutions, and updates are shared."
+    answer: "Once you register, you'll receive an invite link to our private whatsapp group where discussions, solutions, and updates are shared."
   },
   {
     question: "How do I invite people?",
     answer:
       "When you log in you will be able to see your unique invite link. Just share it. Once your friend successfully signs up using this link, you earn points!",
   },
-   {
-    question: "How do I invite people?",
-    answer:
-      "You can share the program link directly with your friends. We often have referral bonuses, so check the main page for details!",
-  },
+  
    {
     question: "How do I earn Karma Points?",
     answer: [
@@ -68,14 +64,31 @@ function FAQ() {
     ]
   },
    {
-    question: "How do I invite people?",
+    question: "How do badges work?",
     answer:
-      "You can share the program link directly with your friends. We often have referral bonuses, so check the main page for details!",
+    [   "Badges unlock rewards-",
+        "Explorer (Sign Up) → Automatically assigned after signup",
+        "Seeker (+5 Invite ) → Unlock Coding Assessment",
+        "Apprentice (+10 Invites ) → Unlock 40% Discount on Renaissance",
+        "Disciple (+10 Invites) → Unlock 15 minutes Mentor Session/ Resume Review"
+
+
+    ]
+      },
+   {
+    question: "How does the leaderboard work?",
+    answer:
+    "The leaderboard shows top opportunists based on Karma Points. The more rewards you unlock the higher you rank!"
   },
    {
-    question: "How do I invite people?",
+    question: "Can I redeem multiple rewards at once?",
     answer:
-      "You can share the program link directly with your friends. We often have referral bonuses, so check the main page for details!",
+    "Yes, if you have enough points, you can redeem multiple rewards before your points reset."
+  },
+   {
+    question: "What happens if I refer to more than 10 people the same day?",
+    answer:
+    "Bonus multipliers apply only up to 10 referrals per day. Beyond 10 referrals, you will earn a fixed 10 Karma Points per referral."
   },
 
 
@@ -125,7 +138,7 @@ function FAQ() {
                                             >
                                             {Array.isArray(item.answer) ? (
 
-      // If it's an array, render a <ul>
+                                                // If it's an array, render a <ul>
                                                     <ul className="list-disc">
                                                         {item.answer.map((line) => (
                                                         <p className='w-[772px] h-auto text-[16px] leading-[24px] text-[#E2E8F0]' style={{fontFamily:"'Gilroy',sans-serif", fontWeight:400}}>{line}</p>
