@@ -13,3 +13,32 @@
   font-style: normal;
   font-display: swap;
 }
+/* Add this to your src/index.css file */
+
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px; /* Width of the entire scrollbar */
+  
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #3A3C43; /* Color of the tracking area */
+  border-radius: 4px;
+  width: 12px;
+
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #14171F; /* Color of the scroll thumb */
+  border-radius: 4px; /* Roundness of the scroll thumb */
+  border: 2px solid #292c33; /* Creates padding around the thumb */
+  width: 10px;
+
+
+
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #14171F; /* Color of the thumb on hover */
+  
+}
