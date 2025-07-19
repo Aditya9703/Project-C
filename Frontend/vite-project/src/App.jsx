@@ -2,6 +2,7 @@
 import "./App.css";
 import Career from "./components/Career";
 import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import Instructor from "./components/Instructor";
 import Navbar from "./components/Navbar";
@@ -18,6 +19,7 @@ function App() {
         <Roadmap />
         <Career/>
         <FAQ/>
+        <Footer/>
       </Router>
     </>
   );
