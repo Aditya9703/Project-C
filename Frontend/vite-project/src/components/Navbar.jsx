@@ -1,69 +1,57 @@
-import React , {useState} from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 function Navbar() {
-    const [dropDown , setDropDown] = useState(false);
-    const [dropDown2 , setDropDown2] = useState(false);
+
 
   return (
-    <div className='h-[96px] w-full border-b-1 px-[74px] py-[24px] 'style={{fontFamily: "'Gilroy' , sans-serif"}}>
+    <div className='h-[96px] w-[1442px] border-b-1 px-[64px] border-neutral-200 py-[24px] flex justify-center items-center'>
           <nav className="navbar">
-            <div className="flex w-[1312px] gap-[52px]">
+            <div className="flex w-[1312px] gap-[52px] items-center">
               <div className='w-[260px] h-[40px]'>
                 <img src="/images/LOGO.png" alt="" />
               </div>
-              <div className='flex gap-[20px]'>
-              <div>
-                <div className=' w-[148px] h-[24px]'>
-                <p className='text-center  font-normal text-[16px]/[24px]'>Fellowship program</p>
-                </div>
-                <div>
-              <Link to="/">Launch tech Career</Link>
+              <div className='flex gap-[20px] items-center'>
+              <div className='flex flex-col items-center cursor-pointer'>
+              
+                <p className='font-normal text-[16px]/[24px] w-[148px] h-[24px] text-[#231F20]' style={{fontFamily: "'Gilroy-Medium' , sans-serif"}}>Fellowship program</p>
+         
+              
+                <p className='text-[10px]/[12px] text-[#5A74D7] w-[95px] h-[12px]' style={{fontFamily: "'Gilroy-Medium' , sans-serif"}}>Launch Tech Career</p>
+           
               </div>
+              <div className='flex flex-col items-center cursor-pointer'>
+              
+                <p className='font-normal text-[16px]/[24px] w-[96px] h-[24px] text-[#231F20]' style={{fontFamily: "'Gilroy-Medium' , sans-serif"}}>Renaissance</p>
+         
+              
+                <p className='text-[10px]/[12px] text-[#5A74D7] w-[96px] h-[12px]' style={{fontFamily: "'Gilroy-Medium' , sans-serif"}}>Interview Prepration</p>
+           
               </div>
-              <div>
-                <p className='text-center'>Renaissance</p>
-              <Link to="/">Interview Preperation</Link>
+             
+              <div className='flex flex-col items-center cursor-pointer'>
+                  <div className='flex gap-[4px] items-center justify-between'>
+                      <p className='font-normal text-[16px]/[24px] w-[161px] h-[24px] text-[#231F20]' style={{fontFamily: "'Gilroy-Medium' , sans-serif"}}>Certification Courses</p>
+                      <FontAwesomeIcon icon={faAngleDown} className="w-4 h-4 text-[#231F20]" />
+
+                  </div>
+                      <p className='text-[10px]/[12px] text-[#5A74D7] w-[181px] h-[12px] text-center' style={{fontFamily: "'Gilroy-Medium' , sans-serif"}}>In-Demand Skills</p>
+
               </div>
-              <div className='relative'>
-                <div>
-                    <button onClick={() => {setDropDown(!dropDown)}}>
-                        Certification Courses
-                    </button>
-                </div>
-                    {dropDown &&
-                    (
-                        <div className='absolute top-full left-0 bg-white border shadow-lg z-50'>
-                            <ul>
-                                <li>link1</li>
-                                <li>link2</li>
-                                <li>link3</li>
-                                <li>link4</li>
-                            </ul>
-                        </div>
-                    )
-                    }
+              <div className='flex flex-col items-center cursor-pointer'>
+                  <div className='flex gap-[4px] items-center justify-between'>
+                      <p className='font-normal text-[16px]/[24px] w-[77px] h-[24px] text-[#231F20]' style={{fontFamily: "'Gilroy-Medium' , sans-serif"}}>Resources</p>
+                      <FontAwesomeIcon icon={faAngleDown} className="w-4 h-4 text-[#231F20]" />
+
+                  </div>
+                      <p className='text-[10px]/[12px] text-[#5A74D7] w-[65px] h-[12px] text-center' style={{fontFamily: "'Gilroy-Medium' , sans-serif"}}>Free Learning</p>
+
               </div>
 
-              <div className='relative'>
-                <div>
-                    <button onClick={() => {setDropDown2(!dropDown2)}}>
-                        Resources
-                    </button>
-                </div>
-                    {dropDown2 &&
-                    (
-                        <div  className='absolute top-full left-0 bg-white border shadow-lg z-50'>
-                            <ul>
-                                <li>link1</li>
-                                <li>link2</li>
-                                <li>link3</li>
-                                <li>link4</li>
-                            </ul>
-                        </div>
-                    )
-                    }
-              </div>
+
+              
+
               </div>
             </div>
           </nav>

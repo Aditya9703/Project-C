@@ -7,9 +7,23 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-Medium';
   src: url('/fonts/Gilroy-Medium.ttf') format('truetype');
   font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('/fonts/Gilroy-Regular.ttf') format('truetype');
+ 
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('/fonts/Gilroy-Light.ttf') format('truetype');
+
   font-style: normal;
   font-display: swap;
 }
