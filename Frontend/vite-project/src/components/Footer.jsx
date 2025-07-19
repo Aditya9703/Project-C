@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className='bg-[#181B43] w-full py-[40px] px-[64px] flex justify-center items-center'>
 
-        <div className='flex w-full gap-[40px] justify-between items-center'>
+        <div className='flex w-full gap-[40px] justify-between items-start'>
 
                 <div className='flex gap-[20px] flex-col'>
                     <p className='w-[133px] h-[20px] text-[16px] leading-[20px] text-[#F8FAFC]' style={{fontFamily:"'Gilroy-Bold', sans-serif", fontWeight:"700"}}>ABOUT US</p>
@@ -52,6 +52,67 @@ function Footer() {
                         <a href="" className='w-[303px] h-[20px] text-[14px] leading-[20px] text-[#F8FAFC]' style={{fontFamily:"'Gilroy', sans-serif ", fontWeight:"200"}}>Begin with Programming in C++</a>
                         <a href="" className='w-[303px] h-[20px] text-[14px] leading-[20px] text-[#F8FAFC]' style={{fontFamily:"'Gilroy', sans-serif ", fontWeight:"200"}}>Frontend Engineering Pro</a>
                     </div>
+                </div>
+
+                <div className='flex flex-col gap-[40px]'>
+
+                    <div className='flex flex-col gap-[12px]'>
+                      <p className='w-[271px] h-[20px] text-[16px] leading-[20px] text-[#F8FAFC]' style={{fontFamily:"'Gilroy-Bold', sans-serif", fontWeight:"700"}}>CONTACT US</p>
+
+                      <div className='flex flex-col gap-[20px]'>
+
+                        <div className='flex items-center gap-[8px]'>
+                            <img src="/images/phone.png" alt="" height="24px" width="24px"/>
+                            <p href="" className='w-[108px] h-[20px] text-[14px] leading-[20px] text-[#F8FAFC]' style={{fontFamily:"'Gilroy', sans-serif ", fontWeight:"200"}}>+91 9871723495</p>
+
+                        </div>
+
+                        <div className='flex items-center gap-[8px]'>
+                            <img src="/images/location.png" alt="" height="24px" width="24px"/>
+                            <p href="" className='w-[240px] h-[40px] text-[14px] leading-[20px] text-[#F8FAFC]' style={{fontFamily:"'Gilroy', sans-serif ", fontWeight:"200"}}>514, Iconic Corenthum Tower, Noida Sector 62, Noida.</p>
+
+                        </div>
+
+                        <div className='flex items-center gap-[8px]'>
+                            <img src="/images/mail.png" alt="" height="24px" width="24px"/>
+                            <p href="" className='w-[230px] h-[20px] text-[14px] leading-[20px] text-[#F8FAFC]' style={{fontFamily:"'Gilroy', sans-serif ", fontWeight:"200"}}>help@programmingpathshala.com</p>
+
+                        </div>
+
+                      </div>
+
+                     
+
+                    </div>
+
+                     <div className='flex flex-col gap-[12px]'>
+                        <p className='w-[196px] h-[20px] text-[16px] leading-[20px] text-[#F8FAFC]' style={{fontFamily:"'Gilroy-Bold', sans-serif", fontWeight:"700"}}>SOCIAL LINKS</p>
+                        <div className='flex gap-[12px]'>
+
+                             <a href="https://google.com" target='blank'><div className='rounded-[50%] flex justify-center items-center bg-[#FFFFFF] w-[40px] h-[40px]'>
+                                <img  src='/images/youtube.png' height="24px" width="24px"/>
+                            </div> </a>
+
+                            <a href="https://google.com" target='blank'><div className='rounded-[50%] flex justify-center items-center bg-[#FFFFFF] w-[40px] h-[40px]'>
+                                <img  src='/images/insta.png' height="24px" width="24px"/>
+                            </div> </a>
+                            <a href="https://google.com" target='blank'><div className='rounded-[50%] flex justify-center items-center bg-[#FFFFFF] w-[40px] h-[40px]'>
+                                <img  src='/images/linkedin.png' height="24px" width="24px"/>
+                            </div> </a>
+                            <a href="https://google.com" target='blank'><div className='rounded-[50%] flex justify-center items-center bg-[#FFFFFF] w-[40px] h-[40px]'>
+                                <img  src='/images/facebook.png' height="24px" width="24px"/>
+                            </div> </a>
+
+                        </div>
+
+                        
+                      </div>
+
+                      <div>
+                            <p  className='w-[325px] h-[20px] text-[14px] leading-[20px] text-[#F8FAFC] font-light' style={{fontFamily:"'Gilroy', sans-serif "}}>All Right Reserved with @Programming Pathshala</p>
+
+                        </div>
+
                 </div>
 
         </div>
