@@ -8,6 +8,7 @@ import Instructor from "./components/Instructor";
 import Navbar from "./components/Navbar";
 import Roadmap from "./components/Roadmap";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Work from "./components/Work";
 
 function App() {
   return (
@@ -16,10 +17,12 @@ function App() {
         <Navbar />
         <Homepage />
         <Instructor />
+        <Work/>
         <Roadmap />
         <Career/>
         <FAQ/>
         <Footer/>
+
       </Router>
     </>
   );
