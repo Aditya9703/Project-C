@@ -9,12 +9,14 @@ import Navbar from "./components/Navbar";
 import Roadmap from "./components/Roadmap";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Work from "./components/Work";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        <Hero/>
         <Homepage />
         <Instructor />
         <Work/>

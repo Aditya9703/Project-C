@@ -6,7 +6,7 @@ function Navbar() {
 
 
   return (
-    <div className='h-[96px] w-[1442px] border-b-1 px-[64px] border-neutral-200 py-[24px] flex justify-center items-center'>
+    <div className='h-[96px] w-full border-b-1 px-[64px] border-neutral-200 py-[24px] flex justify-center items-center'>
           <nav className="navbar">
             <div className="flex w-[1312px] gap-[52px] items-center">
               <div className='w-[260px] h-[40px]'>
