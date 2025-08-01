@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors'
 import cookieParser from 'cookie-parser'; 
 import userRouter from './routes/user.routes.js';
+import routerDashboard from './routes/rankingRoutes.js';
 
 const app = express();
 
@@ -20,6 +21,9 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 
 //routes :
-app.use('/api/v1/users',userRouter)
+
+app.use('/api/v1/users',userRouter);
+
+app.use('/api/v1/rankings',routerDashboard);
 
 export {app}
