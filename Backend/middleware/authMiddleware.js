@@ -1,15 +1,34 @@
+import { asyncHandler } from "../utils/asyncHandler.js";
 import jwt from 'jsonwebtoken';
+import { ApiError } from "../utils/ApiError.js";
+import { User } from "../models/User.js";
 
-const authMiddleware = (req, res, next) => {
-  const token = req.headers.authorization;
-  if (!token) return res.status(401).json({ message: 'No token provided' });
+const verifyJWT = asyncHandler(async (req,_,next) => {
+    const token = req.cookies?.accessToken || req.header("Authorization")?.replace("Bearer ","");
 
-  try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.userId = decoded.id;
-    next();
-  } catch (error) {
-    res.status(401).json({ message: 'Invalid token' });
-  }
-};
-export default authMiddleware;
+        if(!token)
+        {
+            throw new ApiError(401,"Unauthorized request, Missing token");
+        }
+
+    try{
+        const decodedToken = jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
+
+        const user = await User.findById(decodedToken._id).select("-password -refreshToken");
+
+        if(!user){
+            throw new ApiError(401,"Invalid token access");
+        }
+    
+        req.user = user;
+
+        next();
+    }
+    catch(err){
+        throw new ApiError(401,"Invalid access token");
+    }
+})
+
+export {
+    verifyJWT
+}
