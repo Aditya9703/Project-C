@@ -24,8 +24,9 @@ const generateAccessAndRefreshToken = async (userId) => {
 
 const registerUser = asyncHandler(async (req,res) => {
 
-    const {name,email,whatsappNumber,password} = req.body;
-    const refId = req.query.ref;
+    const {name,email,whatsappNumber,password,ref} = req.body;
+    const refId = ref;
+    console.log(refId);
 
     if([name,email,password].some((feild) => {
         return (feild?.trim() === "")
@@ -79,7 +80,7 @@ const registerUser = asyncHandler(async (req,res) => {
     }
 
     
-    const referralLink = `${req.protocol}://${req.get("host")}/register?ref=${user._id}`;
+    const referralLink = `http://localhost:5173/?ref=${user._id}`;
 
     if(!referralLink)
     {
